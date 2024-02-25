@@ -10,7 +10,9 @@ function App() {
   const [formData, setFormData] = React.useState<Data | null>(null);
 
   const editData = (index: number) => {
-    setFormData({ ...data[index] });
+    const deepCopy = JSON.parse(JSON.stringify(data[index]));
+
+    setFormData(deepCopy);
     setShowForm(true);
   };
 

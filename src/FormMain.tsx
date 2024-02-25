@@ -21,6 +21,11 @@ export default function FormMain() {
     <>
       <label>First Name</label>
       <input {...register("name")} />
+      <label>
+        <input type="checkbox" {...register("lovesFillingForms")} /> Love
+        filling forms?
+      </label>
+
       <label>Gender Selection</label>
       <select {...register("gender")}>
         <option value=""></option>

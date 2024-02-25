@@ -14,6 +14,7 @@ export default function FormTest(props: FormTestProps) {
       : {
           defaultValues: {
             name: "",
+            lovesFillingForms: true,
             gender: "",
           },
         }

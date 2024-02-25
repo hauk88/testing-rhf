@@ -1,5 +1,6 @@
 export type Data = {
   name: string;
+  lovesFillingForms: boolean;
   gender: "male" | "female" | "";
 } & (FemaleData | MaleData);
 
