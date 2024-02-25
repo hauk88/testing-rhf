@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import FormTest from "./FormTest";
+import FormSetup from "./FormSetup";
 import { Data } from "./data";
 import ViewData from "./ViewData";
 
@@ -34,7 +34,7 @@ function App() {
       >
         <div>
           <h2>FORM</h2>
-          {showForm && <FormTest onSave={onSave} data={formData} />}
+          {showForm && <FormSetup onSave={onSave} data={formData} />}
         </div>
 
         <div>

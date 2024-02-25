@@ -2,12 +2,12 @@ import { useForm, SubmitHandler, FormProvider } from "react-hook-form";
 import { Data } from "./data";
 import FormMain from "./FormMain";
 
-type FormTestProps = {
+type FormSetupProps = {
   data: Data | null;
   onSave: (showForm: Data) => void;
 };
 
-export default function FormTest(props: FormTestProps) {
+export default function FormSetup(props: FormSetupProps) {
   const methods = useForm<Data>(
     props.data
       ? { defaultValues: props.data }
