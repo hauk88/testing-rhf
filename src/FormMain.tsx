@@ -10,8 +10,10 @@ export default function FormMain() {
   const gender = watch("gender");
 
   useEffect(() => {
-    if (gender === "male") {
-      setValue("sports", "liverpool");
+    // Set default values for subforms.
+    if (gender === "female") {
+      // This overrides on edit.
+      // setValue("hobbies", [{ name: "", rank: 0 }]);
     }
   }, [gender]);
   console.log({ gender });

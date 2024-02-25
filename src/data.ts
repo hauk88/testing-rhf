@@ -4,13 +4,14 @@ export type Data = {
 } & (FemaleData | MaleData);
 
 export type FemaleData = {
-  hobby: string;
-  useShampoo: boolean;
-  shampooType?: string;
+  hobbies: Hobby[];
+};
+
+export type Hobby = {
+  name: string;
+  rank: number;
 };
 
 export type MaleData = {
   sports: string;
-  useDeoderant: boolean;
-  deoderantType?: string;
 };
